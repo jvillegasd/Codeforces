@@ -4,7 +4,7 @@
 using namespace std;
 
 int binarySearch(int M, int tam, int shops[]){
-    int inf = 0, sup = tam - 1, mid, i = -1;
+    int inf = 0, sup = tam - 1, mid;
     while(inf + 1 < sup){
         mid = (sup + inf)/2;
         if(M >= shops[mid]){
