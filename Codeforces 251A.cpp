@@ -20,3 +20,5 @@ int main(){
     printf("%I64d\n", ans);
     return 0;
 }
+//La idea es ir buscando solos los dos puntos mas lejanos, luego de realizar el delta, se van a obtener cuantos puntos hay
+//en ese intervalo, todo cumplen con la condicion que piden, ahora solo falta es hallar las combinaciones posibles
