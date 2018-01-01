@@ -6,7 +6,7 @@
 using namespace std;
 
 char map[1010][1010];
-int rowE, colE, rowS, colS, r, c, dist[1010][1010];
+int rowE, colE, rowS, colS, r, c, dist[1010][1010], MAX = numeric_limits<int>::max();
 const int rows[] = {0, 1, 0, -1}, cols[] = {1, 0, -1, 0};
 
 bool valid(int row, int col){
@@ -26,7 +26,7 @@ int BFS(){
             int nRow = row + rows[i];
             int nCol = col + cols[i];
             if(valid(nRow, nCol) || map[nRow][nCol] == 'T') continue;
-            if(dist[nRow][nCol] > dist[row][col] + 1){
+            if(dist[nRow][nCol] == MAX){
                 dist[nRow][nCol] = dist[row][col] + 1;
                 cola.push(make_pair(nRow, nCol));
             }
@@ -47,7 +47,7 @@ int main(){
         for(int j = 0; j < c; j++){
             if(map[i][j] == 'E') rowE = i, colE = j;
             if(map[i][j] == 'S') rowS = i, colS = j;
-            dist[i][j] = numeric_limits<int>::max();
+            dist[i][j] = MAX;
         }
     }
     printf("%d\n", BFS());
