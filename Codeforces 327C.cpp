@@ -42,7 +42,7 @@ int main(){
     si en la i-esima posicion de la string original, la demas posiciones de las concatenaciones seria:
                     i, i + n, i + 2 * n, ..., i + (k - 1) * n, donde k es el numero de concatenaciones
     Ahora, extendiendo esto a la solucion parcial tendriamos que para cada 5 o 0 encontrado se hace:
-                    2^i + 2^(i + 2 * n) + 2^(i + 3 * n) + ... + 2^(i + (k - 1) * n)
+                    2^i + 2^(i + n) + 2^(i + 2 * n) + 2^(i + 3 * n) + ... + 2^(i + (k - 1) * n)
                     2^i * (2^0 + 2^n + 2^(2 * n) + 2^(3 * n) + ... + 2^((k - 1) * n))
     Entonces, sacando un factor comun podemos obtener una expresion que se multiplicaria luego de obtener la
     sumatoria de las potencias:
