@@ -27,7 +27,7 @@ int main(){
     return 0;
 }
 /*
-    Es un problema de combinatoria, no voy a mentir, tuve que mirar el tutorial para poder sacar la solucion
+    Es un problema de combinatoria, no voy a mentir, tuve que mirar un poco el tutorial para poder sacar la solucion
     optima. Empecemos a analizar: Tenemos que hallar todas las posibles maneras en la cual al eliminar digitos
     de la string obtengamos un numero divisible entre 5. Entonces, un numero es divisible entre 5 si y solo si el
     ultimo digito es 0 o 5, por lo que empezariamos a buscar las posiciones en la cual esten el 5 o 0. Cada vez que
