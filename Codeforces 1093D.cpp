@@ -48,6 +48,6 @@ int main(){
     puede pintar cada componente. El numero de formas en que se puede pintar una componente es:
                                                 2^a + 2^b
                     Donde "b" son el numero de nodos impares y "a" numero de nodos pares.
-    Entonces, 2^b representa el numero de formas de pintar los "b" nodos y 2^a son los nodos pares que deben
-    de estar adjacentes con los impares. 
+    Entonces, 2^b representa el numero de formas de pintar los "b" nodos y 2^a es el caso cuando los nodos impares
+    cambian de posicion con los pares. 
 */
