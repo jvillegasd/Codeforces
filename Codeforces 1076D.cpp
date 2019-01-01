@@ -51,5 +51,6 @@ int main(){
 /*
     La estrategia es obtener siempre "k" aristas, es decir, revisaremos "k + 1" nodos mientras hallamos los caminos
     cortos. Teniendo lo anterior en cuenta, el problema se resume a hallar los caminos cortos desde el nodo "1" hasta
-    que se cuenten exactamente "k + 1" nodos.
+    que se cuenten exactamente "k + 1" nodos e imprimir las aristas que usaron para analizar los "k + 1" nodos
+    incluyendo al nodo "1".
 */
