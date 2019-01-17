@@ -25,3 +25,9 @@ int main(){
     }
     return 0;
 }
+/*
+    Solucion:
+    twoStep tendra los pasos de "2" posibles y un paso de "1" si es impar, si twoStep no es multiplo de m, se 
+    le quitara twoStep % m y esto significa que al conjunto creado se eliminara tantos "2" como twoStep % m valga, 
+    para luego agregar tantos "1" como m valga.
+*/
