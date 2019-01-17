@@ -28,6 +28,6 @@ int main(){
 /*
     Solucion:
     twoStep tendra los pasos de "2" posibles y un paso de "1" si es impar, si twoStep no es multiplo de m, se 
-    le quitara twoStep % m y esto significa que al conjunto creado se eliminara tantos "2" como twoStep % m valga, 
-    para luego agregar o reemplazar "2" con tantos "1" como m valga.
+    le quitara twoStep % m y esto significa que al conjunto creado se eliminara tantos elementos como 
+    twoStep % m valga, para luego agregar o reemplazar tantos "2" o "1" como m valga.
 */
