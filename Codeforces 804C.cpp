@@ -52,7 +52,7 @@ int main(){
     return 0;
 }
 /*
-    El problema fue algo dificil de entender, me costo pero basicamente pide el minimo de colores necesarios
+    El problema fue algo dificil de entender y me costo pero basicamente pide el minimo de colores necesarios
     tal que los nodo-helados no adjacentes sean del mismo color.
     Definamos nodo-helado como los nodos del grafo G y tambien definamos nodo-arbol como los nodos del arbol T.
     Solucion:
@@ -61,4 +61,9 @@ int main(){
     la condicion de minimo de colores (no contar mucho). Finalizando, solo encontrar el numero de color mas grande
     que tambien denotara el minimo de colores usados y tener en cuenta de que si un nodo-hielo no fue pintado,
     entoces se pintara de "1".
+    Notas:
+    -) Los sets que tienen cada nodo-arbol son subgrafos de G
+    -) Se busca colorear G y no T
+    -) G es disconexo con subgrafos clique
+    -) El problema basicamente busca el maximo clique de G
 */
