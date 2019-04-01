@@ -53,9 +53,9 @@ int main(){
     return 0;
 }
 /*
-    La estrategia es obtener el MST del grafo para siempre el minimo costo de un camino ya que como siempre
-    depende de la arista mas grande y con el MST minimizamos el tamaño de las aristas a tener en cuenta.
-    A medida de que el MST se va formando, contar el numero de vertices especiales tiene los diferentes
+    La estrategia es obtener el MST del grafo para que siempre obtengamos las aristas de menor tamaño, y como 
+    siempre depende de la arista mas grande, con el MST minimizamos el tamaño de las aristas a tener en cuenta.
+    A medida de que el MST se va formando, contar el numero de vertices especiales que tiene los diferentes
     conjuntos disyuntos, cosa que al hallar una arista cuya union de conjuntos resulte en obtener un nuevo
-    conjunto con todos los vertices especial el peso de esa arista sera la respuesta.
+    conjunto con todos los vertices especiales, entonces el peso de esa arista sera la respuesta.
 */
