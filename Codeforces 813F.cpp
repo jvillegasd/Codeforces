@@ -135,6 +135,6 @@ int main(){
         for(auto ri : di.sp) insertNode(1,1,q,ri.fp,ri.sp,di.fp.fp,di.fp.sp);
     }
     DFS(1,1,q);
-    for(int i=1; i<=q; i++) if(ans[i]==1) printf("YES\n"); else printf("NO\n");
+    for(int i=1; i<=q; i++) if(ans[i]) printf("YES\n"); else printf("NO\n");
     return 0;
 }
