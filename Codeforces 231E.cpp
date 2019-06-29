@@ -59,7 +59,7 @@ void DFS(int u, int p){
     if(block[u] == -1) block[u] = cnt++;
 }
 
-void DFS2(int u, int p = 0){
+void DFS2(int u, int p){
     dp[u] = cb[u] + dp[p];
     tin[u] = cntt++;
     parent[u][0] = p;
@@ -78,7 +78,7 @@ bool is_anc(int u, int v){
 int lca(int u, int v){
     if(is_anc(u, v)) return u;
     if(is_anc(v, u)) return v;
-    for(int i = lg2n - 1; i >= 0; --i) if(parent[u][i] && !is_anc(parent[u][i], v)) u = parent[u][i];
+    for(int i = lg2n - 1; i >= 0; --i) if(!is_anc(parent[u][i], v)) u = parent[u][i];
     return parent[u][0];
 }
 
