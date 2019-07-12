@@ -36,8 +36,9 @@ int main(){
         ans++;
         deleted=0;
         while(!q.empty() && q.front() <= tope) deleted++, q.pop();
-        tope+=deleted;
+        tope+=deleted; 
         if(!q.empty() && q.front()-tope > 0) tope+=((q.front()-tope)/k+((q.front()-tope)%k!=0))*k;
+        //q.front()-tope=desecha la pagina donde "tope" es el tope y ubica la pagina de q.front() como si fuera la primera
     }
     printf("%lld", ans);
     return 0;
