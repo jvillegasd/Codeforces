@@ -109,7 +109,7 @@ void DFS(int u, int l, int r){
 }
 
 void insertNode(int node, int l, int r, int s, int e, int u, int v){
-    if(l>r||s>r||l>e) return;
+    if(r < s || l > e) return;
     if(l>=s&&r<=e){
         segTree[node].pb({u,v});
         return;
